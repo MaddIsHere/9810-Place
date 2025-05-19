@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Sharp Sans';
+    src: url('fonts/Sharp Sans.otf') format('opentype');
+}
+@font-face {
+    font-family: 'OPPO Sans';
+    src: url('fonts/OPPO Sans.ttf') format('truetype');
+}
+body {
+    background-color: black;
+    font-family: 'Sharp Sans', sans-serif;
+    font-family: 'OPPO Sans', sans-serif;
+}
+a {
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.navlogo img {
+    height: 40px;
+    width: 40px;
+}
+
+.h1{
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-title{
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    margin: 8px;
+}
+.text-sub{
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    margin-left: 8px;
+    margin-top: -8px;
+}
+.round-rectangle-backing {
+            background: #101010;
+            padding: 8px;
+            border-radius: 15px;
+            margin: 8px auto;
+            width: 80%;
+            max-width: 300px;
+}
+.topimage{
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    margin: auto auto;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.arrowimg {
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 8px;
+}
