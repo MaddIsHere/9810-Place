@@ -6,6 +6,21 @@
     font-family: 'OPPO Sans';
     src: url('fonts/OPPO Sans.ttf') format('truetype');
 }
+header, .round-rectangle-backing {
+    animation: fadeUp 1s ease-in-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 body {
     background-color: black;
     font-family: 'Sharp Sans', sans-serif;
@@ -18,13 +33,17 @@ a {
 }
 
 nav {
+    position: fixed;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    z-index: 1000;
 }
 
 .navlogo img {
+    margin-right: 48px;
     height: 40px;
     width: 40px;
 }
@@ -58,6 +77,7 @@ nav {
             max-width: 300px;
 }
 .topimage{
+    aspect-ratio: 16/9;
     width: 100%;
     height: auto;
     border-radius: 7px;
@@ -70,11 +90,19 @@ nav {
     background-color: black;
     color: white;
     padding: 12px 20px;
+    margin-top: -16px;
     border-radius: 15px;
     font-size: 16px;
     text-decoration: none;
     font-weight: bold;
+    width: 100%;
+    transition: 0.3s ease-in-out;
 }
+
+.button:hover {
+    filter: invert(100%);
+}
+
 .arrowimg {
     margin-left: 10px;
     width: 18px;
@@ -94,7 +122,7 @@ nav {
 }
 .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 64px;
+    margin: 32px;
 } 
