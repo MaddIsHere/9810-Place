@@ -42,6 +42,10 @@ nav {
     z-index: 1000;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .navlogo img {
     margin-right: 48px;
     height: 40px;
