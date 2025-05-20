@@ -129,4 +129,5 @@ html{
     justify-content: center;
     align-items: center;
     margin: 32px;
+    animation: fadeUp 1s ease-in-out forwards;
 } 
