@@ -10,6 +10,20 @@ header, .round-rectangle-backing {
     animation: fadeUp 1s ease-in-out;
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -22,7 +36,9 @@ header, .round-rectangle-backing {
 }
 
 body {
-    background-color: black;
+    background: linear-gradient(-70deg, #12051F, #000000, #0F0619, #000000, #12051F);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
     font-family: 'Sharp Sans', sans-serif;
     font-family: 'OPPO Sans', sans-serif;
 }
