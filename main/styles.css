@@ -63,43 +63,41 @@ html{
     font-size: 1.5rem;
     color: white;
     text-align: left;
-    margin: 8px;
+    margin-left: 8px;
+    margin-bottom: 8px;
 }
 .text-sub{
+    width: 50%;
+    overflow-wrap: break-word;
     font-size: 1rem;
     color: white;
     text-align: left;
     margin-left: 8px;
     margin-top: -8px;
 }
+
 .round-rectangle-backing {
             background: #101010;
             padding: 8px;
             border-radius: 15px;
             margin: 8px auto;
-            width: 80%;
-            max-width: 300px;
-}
-.topimage{
-    aspect-ratio: 16/9;
-    width: 100%;
-    height: auto;
-    border-radius: 7px;
-    margin: auto auto;
+            width: 100%;
+            max-width: 700px;
+            
 }
 .button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
     color: white;
     padding: 12px 20px;
-    margin-top: -16px;
+    margin-top: 18px;
     border-radius: 15px;
     font-size: 16px;
     text-decoration: none;
     font-weight: bold;
-    width: 100%;
+    width: 43%;
     transition: 0.3s ease-in-out;
 }
 
@@ -115,12 +113,24 @@ html{
 
 .card{
     display:flex;
-    flex-direction: column;
+    flex-direction: column; 
+}
+
+.card .topimage{
+    display: flex;
+    aspect-ratio: 16/9;
+    align-items: start;
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-top: -28%;
 }
 
 .button-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
     margin-top: 8px;
 }
@@ -130,4 +140,3 @@ html{
     align-items: center;
     margin: 32px;
 } 
-
